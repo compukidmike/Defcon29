@@ -1,0 +1,3 @@
+The dc29boot.hex is the bootloader. It requires a SWD programmer connected to the Tag-Connect port on the badge. This only needs to be done once on a new chip.
+The .uf2 files can be flashed with just a USB cable. Hold the bottom-right button when connecting the USB cable. The badge will enter the bootloader (top-left LED will blink red). It will appear as a mass storage device on your computer. You can then drag/drop the new uf2 firmware file onto it. The badge will automatically reboot when the update is complete.
+NOTE: flashing new firmware will NOT reset your challenge/game status (unless you create custom firmware to overwrite the EEPROM).
