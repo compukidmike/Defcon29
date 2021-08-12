@@ -11,9 +11,13 @@ NOTE: Flashing new firmware should not reset your challenge/game stats. They are
 
 To generate your own .uf2 files, take the compiled .hex file and use the UF2 converter uf2conv.py available from https://github.com/microsoft/uf2/ (in the utils directory).
 
-I used ~~Atmel~~Microchip Studio 7.0 and the ASF Framework. The install files for the exact version I used is available on the DEF CON Media Server
+I wrote the code in ~~Atmel~~Microchip Studio 7.0 and used the ASF Framework. The install files for the version I used is available on the DEF CON Media Server
 https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20badge/
 
 The main microcontroller is an ATSAMD21G16B. It has 64KB of flash and 8KB of RAM. The first 8KB of flash is used for the bootloader, leaving 56KB for the main program. The bootloader is write protected by internal fuses in the microcontroller. If you want to remove it, you'll need to use an SWD programmer or write your own program that unlocks the booloader section and erases/overwrites it. Do this at your own risk.
 
-Pull requests *may* be merged if they add functionality while retaining all original functionality. If you make something cool that doesn't fit this description, let me know and I'll try to add it to a list here.
+Pull requests *may* be merged if they add functionality while retaining all original functionality. If you make something cool that doesn't fit this description, let me know and I'll try to add it to the list here.
+
+## Cool Things Other People Have Made For The Badge ##
+(I have not verified/tested any of these. Use at your own risk) 
+* Music - https://github.com/duck-37/dc29-badge-stuff
